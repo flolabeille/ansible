@@ -1,0 +1,8 @@
+---
+- name: update installations sources depending on client linux distribution
+  hosts: all
+  tasks :
+    - name: Update apt installer
+      ansible.builtin.apt:
+        update_cache: true
+      when: ansible_facts['os_family'] == 'Debian'

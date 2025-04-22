@@ -1,0 +1,10 @@
+---
+- name: Install apache2
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+    update_cache: truie
+
+- name: Active apache2 modules
+  ansible.builtin.apt:
+    name: 
