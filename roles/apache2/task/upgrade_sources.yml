@@ -5,4 +5,32 @@
     - name: Update apt installer
       ansible.builtin.apt:
         update_cache: true
+        upgrade: safe
       when: ansible_facts['os_family'] == 'Debian'
+
+    - name: Update apt installer
+      ansible.builtin.apt:
+        update_cache: true
+        upgrade: safe
+      when: ansible_facts['os_family'] == 'Ubuntu'
+
+    - name: Update apt installer
+      ansible.builtin.dnf:
+        update_cache: true
+        upgrade: safe
+      when: ansible_facts['os_family'] == 'RedHat'
+
+    - name: Collect installed package facts to add dnf is yum is installed
+      ansible.builtin.package_facts:
+      manager: auto
+
+    - name: Ensure dnf is installed if yum is present
+      ansible.builtin.package:
+        name: dnf
+        state: present
+      when: "'yum' in ansible_facts.packages"
+
+    - name: Notify that dnf was installed due to yum presence
+      ansible.builtin.debug:
+        msg: "yum detected — dnf was installed as modern package manager"
+      when: "'yum' in ansible_facts.packages"

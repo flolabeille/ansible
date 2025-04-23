@@ -3,7 +3,7 @@
   ansible.builtin.apt:
     name: apache2
     state: present
-    update_cache: truie
+    update_cache: true
 
 - name: Active apache2 modules
   ansible.builtin.apt:
