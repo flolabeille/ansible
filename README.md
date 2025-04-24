@@ -7,11 +7,11 @@ Chaque role saura sa propre documentation dans son README.
 
 ### Serveurs Web
 
-Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur web et de son maintien à jours.
+Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur web et de son maintien à jouir.
 
 ### Serveur BDD
 
-Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur PostgreSQL et de son maintien à jours.
+Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur PostgreSQL et de son maintien à jouir.
 
 ### Remerciement
 
