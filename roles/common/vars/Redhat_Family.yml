@@ -1,0 +1,10 @@
+---
+# This is a non exhaustive list of package to install by default on Redhat families istributions. Redhat, Rocky Linux.
+essential_packages:
+  - vim
+  - curl
+  - wget
+  - htop
+  - net-tools
+  - firewalld
+  - fail2ban

@@ -1,0 +1,26 @@
+---
+# roles/common/tasks/main.yml
+# This role define the basic configuration common to all servers 
+
+# System Update
+# This take will ensure that the system is up to date
+- name: Debian Familly Update System # Debian / Ubuntu
+  ansible.builtin.apt:
+    update_cache: true # Update package lists 
+    upgrade: dist # Upgrade packages. "dist" = true, but most conventional in that case
+  when: ansible_os_familly == "Debian"
+
+- name: Redhat Family Update System # Redhat / Rocky Linux
+  ansible.builtin.dnf:
+    name: "*"
+    upgrade: lastest
+    update_cache: true
+  when: ansible_os_familly == "Redhat"
+
+
+# Main useful packages 
+# This task will install default tools to work on all servers. Essentials Packages are available on ./common/vars directory
+- name: Essentials Packages Installation 
+  ansible.builtin.package:
+    name: "{{ essential_packages }}"
+  state: present

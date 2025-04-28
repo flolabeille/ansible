@@ -1,0 +1,10 @@
+---
+essential_packages:
+# This is a non exhaustive list of package to install by default on Debian families istributions : Debian, Ubuntu
+  - vim
+  - curl
+  - wget
+  - htop
+  - net-tools
+  - ufw
+  - fail2ban
