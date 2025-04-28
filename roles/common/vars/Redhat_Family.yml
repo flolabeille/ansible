@@ -1,5 +1,5 @@
 ---
-# This is a non exhaustive list of package to install by default on Redhat families istributions. Redhat, Rocky Linux.
+# !! NEED INFORMATION : README.md
 essential_packages:
   - vim
   - curl
