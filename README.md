@@ -1,17 +1,17 @@
 # DEPLOIEMENT ET MISES A JOUR DE SERVEURS WEB
 
-## Bienvenue dans la documentation principale du repository.
+### Bienvenue dans la documentation principale du repository.
 
-Dans cette documentation vous découvrirer les fonctions principale de code ainsi que sont utilisations afin de l'implémenter à vos SI.
-Chaque role sera documenté dans un README spcécifique.
+Dans cette documentation vous découvrirez les fonctions principales du code ainsi que son utilisation afin de l'implémenter dans vos SI.
+Chaque role saura sa propre documentation dans son README.
 
 ### Serveurs Web
 
-Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur web et de son maintient à jours.
+Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur web et de son maintien à jours.
 
 ### Serveur BDD
 
-Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur PostgreSQL et de son maintient à jours.
+Déployer facilement une infrastructure automatisée pour le déploiement d'un nouveau serveur PostgreSQL et de son maintien à jours.
 
 ### Remerciement
 
