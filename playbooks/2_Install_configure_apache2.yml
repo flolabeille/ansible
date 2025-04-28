@@ -1,0 +1,7 @@
+- name: Installation apache2
+  hosts: web
+  become: true  # Pour avoir les privilèges sudo
+  gather_facts: true  # Pour collecter les informations sur les systèmes
+
+  roles:
+    - apache2
