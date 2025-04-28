@@ -1,0 +1,9 @@
+---
+# playbooks/test_common.yml
+- name: Test du rôle common
+  hosts: all
+  become: true  # Pour avoir les privilèges sudo
+  gather_facts: true  # Pour collecter les informations sur les systèmes
+
+  roles:
+    - ansible/roles/common/task/main.yml
